@@ -1,0 +1,16 @@
+* {
+    background-color: #282c34;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor {
+    margin-top: 5%;
+    width: 60%;
+    height: 100%;
+}
