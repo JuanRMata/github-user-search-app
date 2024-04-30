@@ -1,16 +1,63 @@
-* {
-    background-color: #282c34;
+@font-face {
+    font-family: "Space Mono", monospace;
+    src: url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+}
+
+:root {
+    --fondo-claro: #F6F8FF;
+    --fondo-oscuro: #141D2F;
+}
+
+*  {
+    font-family: 'Space Mono', monospace;
+    margin: 0;
+    padding: 0;
 }
 
 .principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.principal-claro {
+    background: var(--fondo-claro);
+    background-size: cover;
+}
+
+.principal-oscuro {
+    background: var(--fondo-oscuro);
+    background-size: cover;
+}
+
+.contenedor {
+    width: 50%;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.contenedor {
-    margin-top: 5%;
-    width: 60%;
-    height: 100%;
+.encabezado {
+    width: 100%;
+    height: 2.375rem;
+}
+
+/* componente buscador */
+
+.buscador {
+    width: 100%;
+    height: 4.313rem;
+    margin-top: 2.188rem;;
+}
+
+/* componente resultado */
+
+.resultado {
+    width: 100%;
+    height: 27.75rem;
+    margin-top: 1.5rem;
 }

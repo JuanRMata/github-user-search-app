@@ -1,0 +1,185 @@
+:root {
+    --contenedor-claro: #FEFEFE;
+    --contenedor-oscuro: #1E2A47; 
+    --color-nombre-claro: #2B3442; 
+    --color-fecha-claro: #697C9A;
+    --color-nombre-oscuro: #FFF; 
+    --color-fecha-oscuro: #FFFFFF;
+    --arroba: #0079FF;
+    --biografia: #4B6A9B;
+    --fondo-datos-claro: #F6F8FF;
+    --fondo-datos-oscuro: #141D2F;
+    --informacion-claro: #4B6A9B;
+    --informacion-oscuro: #FFF;
+    --resultados-claro: #2B3442;
+    --resultados-oscuro: #FFFFFF;
+}
+
+/* contenedor principal */
+
+.cont-result {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+
+.cont-result-claro {
+    background-color: var(--contenedor-claro);
+}
+.cont-result-oscuro {
+    background-color: var(--contenedor-oscuro);
+}
+
+/* Contenedor de la imagen */
+
+.imagen-perfil {
+    width: auto; 
+    height: auto;
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+/* Contenedor de la informacion */
+
+.informacion-perfil {
+    width: 100%; 
+    height: auto; 
+    margin: 2.75rem 3rem 3rem 2.313rem;
+}
+
+/* Contenedor nombre fecha */
+
+.nombre-fecha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+.nombrep {
+    font-size: 1.625rem;
+    font-weight: 700;
+}
+
+.nombrep-claro {
+    color: var(--color-nombre-claro);
+}
+.nombrep-claro {
+    color: var(--color-nombre-oscuro);
+}
+
+.fechap  {
+    color: var(--color-fecha-claro);
+    font-size: 0.938rem;
+    font-weight: 400;
+}
+
+.fechap-claro {
+    color: var(--color-fecha-claro);
+}
+
+.fechap-oscuro {
+    color: var(--color-fecha-oscuro);
+}
+
+/* Estilos del arroba */
+
+.arroba {
+    color: var(--arroba);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 0.125rem;
+}
+
+/* Estilos biografia */
+
+.biografia {
+    color: var(--biografia);
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 25px;
+    margin-top: 1.25rem;
+}
+
+/* Estilos contenedor de datos */
+
+.datos {
+    width: 100%;
+    height: auto;
+    border-radius: 0.625rem;
+    margin-top: 2rem;
+}
+
+.datos-claro {
+    background-color: var(--fondo-datos-claro);
+}
+
+.datos-oscuro {
+    background-color: var(--fondo-datos-oscuro);
+}
+
+
+.datos-titulos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-top: 0.938rem;
+    padding-right: 5.188rem;
+}
+
+.info {
+    font-size: 0.813rem;
+    font-weight: 400;
+}
+
+.info-claro {
+    color: var(--informacion-claro);
+}
+.info-oscuro {
+    color: var(--informacion-oscuro);
+}
+
+.datos-resultados {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 7.813rem;
+    padding-bottom: 1.063rem;
+}
+
+.info-res{
+    font-size: 1.375rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.info-res-claro {
+    color: var(--resultados-claro);
+}
+.info-res-oscuro {
+    color: var(--resultados-oscuro);
+}
+
+/* Estilos para contenedor de contacto */
+
+.contacto {
+    width: 100%;
+    height: auto;
+    margin-top: 2.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contacto-redes {
+    
+}
+
+.contacto-empresa {
+
+}

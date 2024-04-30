@@ -1,0 +1,103 @@
+ :root {
+    --holder-claro: #4B6A9B;
+    --holder-oscuro: #FFFFFF;
+    --contenedor-claro: #FEFEFE;
+    --contenedor-oscuro: #1E2A47;
+    --boton-search: #0079FF; 
+    --boton-texto: #FFFFFF;
+    --boton-hover: #60ABFF;
+    --label-error: #F74646;
+ }
+
+ /* Configuracion de contenedor */
+
+ .conten {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.594rem 0.594rem  0.625rem 2rem;
+    justify-content: space-between;
+    border-radius: 0.938rem;
+ }
+
+.conten-claro {
+    background-color: var(--contenedor-claro);
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.20);
+}
+.conten-oscuro {
+    background-color: var(--contenedor-oscuro);
+}
+
+/* Configuraciones y estilos para el input*/
+
+.ingreso {
+    background-color: transparent;
+    border: none;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.563rem;
+    width: 15.875rem;
+    margin-left: 1.5rem;
+}
+
+
+
+.ingreso:focus { 
+    outline: none;    /* Esta linea sirve para eliminar el borde que se genera al darle click en el input y logrando que se vea mas limpio*/
+}
+
+.ingreso-claro {
+    color: var(--holder-claro)
+}
+.ingreso-oscuro {
+    color: var(--holder-oscuro)
+}
+
+
+.ingreso-claro::placeholder {
+    color: var(--holder-claro);
+}
+
+.ingreso-oscuro::placeholder {
+    color: var(--holder-oscuro);
+}
+
+/* Estilos para el contenedor de boton */
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Estilos para el label de error de busqueda */ 
+
+.label-exist {
+    color: var(--label-error);
+    color: #F74646;
+    font-size: 0.938rem;
+    font-weight: 700;
+    margin-right: 1.5rem;
+}
+
+
+/* Estilos para el boton Search */
+
+.boton-buscar {
+    background-color: var(--boton-search);
+    border: none;
+    border-radius: 0.625rem;
+    width: 6.625rem;
+    height: 3.125rem;
+    color: var(--boton-texto);
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.boton-buscar:hover {
+    cursor: pointer;
+    background-color: var(--boton-hover);
+}
