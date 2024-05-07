@@ -18,9 +18,7 @@ const App = () => {
   const [sitioWeb,setSitioWeb] = useState('')
   const [imagen,setImagen] = useState('')
   const [redes,setRedes] = useState('')
-  const [isValidUsuario, setIsValidUsuario] = useState(true)
-
-
+  const [isValidUsuario, setIsValidUsuario] = useState(false)
 
   return (
 
@@ -53,8 +51,8 @@ const App = () => {
           />
         </div>
 
-        {isValidUsuario && (
-          <div className='resultado'>
+        {isValidUsuario ? (
+        <div className='resultado'>
           <Resultado 
           modo={modo}
           usuario={usuario}
@@ -71,7 +69,7 @@ const App = () => {
           redes={redes}
           />
         </div>
-        )}
+        ) : null}
       </div>
 
       
