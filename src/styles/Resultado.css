@@ -13,6 +13,8 @@
     --informacion-oscuro: #FFF;
     --resultados-claro: #2B3442;
     --resultados-oscuro: #FFFFFF;
+    --contacto-claro: #4B6A9B;
+    --contact-oscuro: #FFF; 
 }
 
 /* contenedor principal */
@@ -35,8 +37,9 @@
 /* Contenedor de la imagen */
 
 .imagen-perfil {
-    width: auto; 
-    height: auto;
+    width: 7.313rem;
+    height: 7.313rem;
+    border-radius: 7.313rem;
     margin-left: 3rem;
     margin-top: 3rem;
 }
@@ -177,9 +180,31 @@
 }
 
 .contacto-redes {
-    
+    font-size: 0.938rem;
+    font-weight: 400;
 }
 
-.contacto-empresa {
+.contactos-claros {
+    color: var(--contacto-claro);
+}
 
+.contactos-oscuro {
+    color: var(--contact-oscuro);
+}
+
+/* Estilos para cada div de la informacin de contacto */
+
+.sub-contacto {
+    display: flex;
+    gap: 1.195rem;
+}
+
+.inferior {
+    margin-top: 1.188rem;
+}
+
+/* Resultados NULL */
+
+.vacios {
+    opacity: 30%;
 }
